@@ -1,1 +1,0 @@
-{"listeners":{"*:8080":{"pass":"routes/kanboard"}},"routes":{"kanboard":[{"match":{"uri":["*.php","*.php/*"]},"action":{"pass":"applications/kb_direct"}},{"action":{"share":"/app/","fallback":{"pass":"applications/kb_index"}}}]},"applications":{"kb_direct":{"type":"php","root":"/app"},"kb_index":{"type":"php","root":"/app","script":"index.php"}}}
